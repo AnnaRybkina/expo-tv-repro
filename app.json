@@ -1,0 +1,69 @@
+{
+  "expo": {
+    "scheme": "routertv",
+    "plugins": [
+      [
+        "@react-native-tvos/config-tv",
+        {
+          "isTvOS": true
+        }
+      ],
+      [
+        "expo-router",
+        {
+          "origin": false
+        }
+      ],
+      [
+        "expo-font",
+        {}
+      ],
+      [
+        "expo-video",
+        {
+          "supportsPictureInPicture": true,
+          "supportsBackgroundPlayback": true
+        }
+      ],
+      [
+        "expo-navigation-bar",
+        {
+          "position": "absolute",
+          "visibility": "hidden",
+          "behavior": "overlay-swipe",
+          "backgroundColor": "#00000080"
+        }
+      ]
+    ],
+    "androidStatusBar": {
+      "hidden": true
+    },
+    "experiments": {
+      "typedRoutes": true
+    },
+    "name": "Preview",
+    "slug": "renderer-apps",
+    "backgroundColor": "#000000",
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "eb224db2-8fb8-4029-9ffd-edc64468dfe4"
+      }
+    },
+    "owner": "doors-tech",
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/eb224db2-8fb8-4029-9ffd-edc64468dfe4"
+    },
+    "android": {
+      "package": "com.doorstech.rendererapps"
+    },
+    "ios": {
+      "bundleIdentifier": "com.doorstech.rendererapps"
+    }
+  }
+}
